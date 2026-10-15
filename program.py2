@@ -216,3 +216,139 @@ print("Factorial:", fact)
 o/p:
 enter a number:5
 120
+
+
+
+(15.10.26)
+1.(peter son number)
+
+
+n = int(input("Enter a number: "))
+temp = n
+s = 0
+while temp > 0:
+    d = temp % 10
+    f = 1
+for i in range(1, d + 1):
+        f *= i
+    s += f
+    temp //= 10
+if s == n:
+    print("Peterson Number")
+else:
+    print("Not a Peterson Number")
+O/p:
+Enter a number: 145
+Peterson Number
+
+
+2.(happy number)
+
+n = int(input("Enter a number: "))
+temp = n
+while temp != 1 and temp != 4:
+    s = 0
+    while temp > 0:
+        d = temp % 10
+        s += d * d
+        temp //= 10
+    temp = s
+if temp == 1:
+    print("Happy Number")
+else:
+    print("Not a Happy Number")
+O/p:
+Enter a number: 19
+Happy Number
+
+
+3.(duck number)
+
+n = input("Enter a number: ")
+if n[0] != '0' and '0' in n:
+    print("Duck Number")
+else:
+    print("Not a Duck Number")
+O/p:
+Enter a number: 1023
+Duck Number
+o/p2:
+Enter a number: 1234
+Not a Duck Number
+
+
+
+4.(fibanacci number)
+
+n = int(input("Enter the number of terms: "))
+a = 0
+b = 1
+for i in range(n):
+    print(a, end=" ")
+    c = a + b
+    a = b
+    b = c
+O/p:
+Enter the number of terms: 7
+0 1 1 2 3 5 8
+
+
+
+5.(strong number) or peter son number is a same 
+
+n = int(input("Enter a number: "))
+temp = n
+s = 0
+while temp > 0:
+    d = temp % 10
+    f = 1
+    for i in range(1, d + 1):
+        f = f * i
+    s = s + f
+    temp = temp // 10
+if s == n:
+    print("Strong Number")
+else:
+    print("Not a Strong Number")
+O/p:
+Enter a number: 145
+Strong Number
+
+
+6.(inverted pyromid)
+*********
+ *******
+  *****
+   ***
+    *
+
+n = 5
+for i in range(n, 0, -1):
+    print(" " * (n - i) + "*" * (2 * i - 1))
+o/p:
+*********
+ *******
+  *****
+   ***
+    *
+
+
+7.(dimand)
+n = 5
+for i in range(1, n + 1):
+    print(" " * (n - i) + "*" * (2 * i - 1))
+for i in range(n - 1, 0, -1):
+    print(" " * (n - i) + "*" * (2 * i - 1))
+o/p:
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+
+
+8.
